@@ -1,0 +1,337 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,900&subset=cyrillic');
+// BOOTSTRAP
+@import "./_bootstrap/bootstrap-reboot";
+@import "./_bootstrap/bootstrap-grid";
+@import "./_bootstrap/forms";
+@import "./_bootstrap/buttons";
+@import "./_bootstrap/alert";
+@import "./_bootstrap/type";
+@import "./_bootstrap/pagination";
+@import "./_bootstrap/modal";
+@import "./_bootstrap/dropdown";
+@import "./_bootstrap/close";
+@import "./_bootstrap/utilities";
+
+* {
+  outline: none !important;
+}
+
+//svg {
+//  -webkit-backface-visibility: hidden;
+//  -moz-backface-visibility: hidden;
+//  -ms-backface-visibility: hidden;
+//  shape-rendering: geometricPrecision !important;
+//}
+
+/* ==========================================================================
+  BODY >>
+============================================================================= */
+body {
+  position: relative;
+  left: 0;
+  right: 0;
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  transition: left .2s;
+  &.main-menu--open {
+    left: -50%;
+    overflow: hidden;
+  }
+}
+
+/* ==========================================================================
+   HEADER >>
+============================================================================= */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: transparent;
+  padding: 1.5rem 0;
+  color: #fff;
+  line-height: 5rem;
+  transition: all .2s;
+  z-index: 100;
+  &__logo {
+    display: inline-block;
+    float: left;
+    padding: 0;
+    margin: .25rem 0;
+    height: 2.5rem;
+    cursor: pointer;
+    & svg {
+      float: left;
+      height: 2.5rem;
+      & .pink {
+        fill: #ff0063;
+        transition: all .2s;
+      }
+      & .black {
+        fill: #fff;
+        transition: all .3s;
+      }
+    }
+  }
+
+  & .button-menu {
+    position: relative;
+    display: none;
+    float: right;
+    background: transparent;
+    border: none;
+    margin: 0;
+    padding: .5rem 0;
+    z-index: 130;
+    transition: all .3s;
+    & .icon-bar {
+      display: block;
+      background: #fff;
+      margin: .25rem 0;
+      width: 2rem;
+      height: 2px;
+      &:nth-child(2) {
+        width: 1.5rem;
+      }
+    }
+    &--open {
+      & .icon-bar {
+        background: #000;
+        transition: all .3s;
+        &:nth-child(2) {
+          margin: 0 0 0 .5rem;
+          background: #f508ba;
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+   HEADER ON SCROLL >>
+============================================================================= */
+.scroll {
+  & .header {
+    background: #fff;
+    padding: .25rem 0;
+    color: #000;
+    line-height: 3rem;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    &__logo {
+      display: inline-block;
+      cursor: pointer;
+      & svg {
+        & .pink {
+          fill: #ff0063;
+          transition: all .2s;
+        }
+        & .black {
+          fill: #3a455a;
+        }
+      }
+    }
+    & .button-menu {
+      transition: all .3s;
+      & .icon-bar {
+        background: #3a455a;
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+   FOOTER >>
+============================================================================= */
+.footer {
+
+}
+
+/* ==========================================================================
+   SECTIONS >>
+============================================================================= */
+.section {
+  padding: 5rem 0;
+  &__title {
+    position: relative;
+    color: #000;
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 1.5rem;
+      height: .25rem;
+      background: #ff0063;
+    }
+  }
+}
+
+/* ==========================================================================
+   SECTIONS >> MAIN_HEADER
+============================================================================= */
+.section-main {
+  padding: 0;
+  &__bg {
+    display: table;
+    width: 100%;
+    padding: 0;
+    background: url('images/support_bg_blur.jpg') no-repeat center center #e5e5e5;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  &__intro {
+    padding: 15rem 0;
+    background: -moz-linear-gradient(to top left, #334263 0%, rgba(10, 24, 88, 0.64) 100%);
+    background: -webkit-gradient(linear, right bottom, left top, from(#334263), to(rgba(10, 24, 88, 0.64)));
+    background: linear-gradient(to top left, #334263 0%, rgba(10, 24, 88, 0.64) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#334263fc', endColorstr='#0a1858a3', GradientType=0);
+
+    &-title {
+      width: 70%;
+      color: #fff;
+      font-size: 2.5rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    &-description {
+      width: 60%;
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+}
+
+
+
+/* ==========================================================================
+   MAIN MENU >>
+============================================================================= */
+.main-menu {
+  &__list {}
+  &__item {}
+}
+
+
+
+
+
+/* ==========================================================================
+   SECTIONS >> HEADER
+============================================================================= */
+
+
+
+
+
+.section {
+  &__overlay {
+    padding: 15rem 0;
+    background: -moz-linear-gradient(to top left, #334263 0%, rgba(10, 24, 88, 0.64) 100%);
+    background: -webkit-gradient(linear, right bottom, left top, from(#334263), to(rgba(10, 24, 88, 0.64)));
+    background: linear-gradient(to top left, #334263 0%, rgba(10, 24, 88, 0.64) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#801b71d6', endColorstr='#80c54daa', GradientType=0);
+  }
+  &__intro {
+    display: table;
+    width: 100%;
+    padding: 0;
+    background: url('images/support_bg_blur.jpg') no-repeat center center;
+    background-color: #e5e5e5;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+    &-title {
+      width: 70%;
+      color: #fff;
+      font-size: 2.5rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    &-description {
+      width: 60%;
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+}
+
+/* ==========================================================================
+   CALL WIDGET >>
+============================================================================= */
+.call-widget {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: -3.5rem;
+  width: 100%;
+  background: #fff;
+  line-height: 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  transition: all .3s;
+  &__action {
+    float: left;
+    padding: .5rem;
+    width: 33%;
+    text-align: center;
+  }
+}
+
+/* ==========================================================================
+   MEDIA QUERIES >>
+============================================================================= */
+@media (max-width: 768px) {
+  // HEADER
+  .header {
+    padding: 0.25rem 0;
+    &__logo {
+      height: 2rem;
+      & svg {
+        height: 2rem;
+      }
+    }
+    & .button-menu {
+      display: block;
+    }
+  }
+
+  // MAIN MENU
+  .main-menu {
+    position: absolute;
+    top: 0;
+    left: 120%;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    height: 1000px;
+    width: 50%;
+    transition: all .2s;
+    &--open {
+      left: 50%;
+      box-shadow: inset 5px 0 10px 0 rgba(0, 0, 0, 0.05);
+    }
+    &__list {}
+    &__item {}
+  }
+
+  // SECTIONS
+  .section-main {
+    &__intro {
+      //text-align: center;
+      &-title {
+        width: 100%;
+        font-size: 1.5rem;
+      }
+      &-description {
+        width: 100%;
+      }
+    }
+  }
+}
