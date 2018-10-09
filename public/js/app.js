@@ -120,18 +120,28 @@ $(function () {
 $(function () {
 
     function openMenu() {
-        $('body, .main-menu').addClass('main-menu--open');
+
+        $('.main-menu').css({ 'height': $(window).outerHeight() + 100 });
+        $('body').append('<div class="modal_bg"></div>').addClass('menu-open');
     }
+
     function closeMenu() {
-        $('body, .main-menu').removeClass('main-menu--open');
+        $('body').removeClass('menu-open');
+        $('.modal_bg').detach();
     }
 
     $(document).on('click', '#button-menu', function () {
 
-        if ($('.main-menu').hasClass('main-menu--open')) {
+        if ($('body').hasClass('menu-open')) {
             closeMenu();
         } else {
             openMenu();
+        }
+    });
+
+    $(window).resize(function () {
+        if ($(window).width() > 768) {
+            closeMenu();
         }
     });
 });

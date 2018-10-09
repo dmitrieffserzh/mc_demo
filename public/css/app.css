@@ -8490,9 +8490,8 @@ a.text-dark:focus {
   outline: none !important;
 }
 
-/* ==========================================================================
-  BODY >>
-============================================================================= */
+/* BODY >>
+========================================================================== */
 
 body {
   position: relative;
@@ -8511,9 +8510,8 @@ body.main-menu--open {
   overflow: hidden;
 }
 
-/* ==========================================================================
-   HEADER >>
-============================================================================= */
+/* HEADER >>
+========================================================================== */
 
 .header {
   position: fixed;
@@ -8591,9 +8589,8 @@ body.main-menu--open {
   background: #f508ba;
 }
 
-/* ==========================================================================
-   HEADER ON SCROLL >>
-============================================================================= */
+/* HEADER ON SCROLL >>
+========================================================================== */
 
 .scroll .header {
   background: #fff;
@@ -8628,13 +8625,11 @@ body.main-menu--open {
   background: #3a455a;
 }
 
-/* ==========================================================================
-   FOOTER >>
-============================================================================= */
+/* FOOTER >>
+========================================================================== */
 
-/* ==========================================================================
-   SECTIONS >>
-============================================================================= */
+/* SECTIONS >>
+========================================================================== */
 
 .section {
   padding: 5rem 0;
@@ -8658,9 +8653,8 @@ body.main-menu--open {
   background: #ff0063;
 }
 
-/* ==========================================================================
-   SECTIONS >> MAIN_HEADER
-============================================================================= */
+/* SECTIONS >> MAIN_HEADER
+========================================================================== */
 
 .section-main {
   padding: 0;
@@ -8670,7 +8664,6 @@ body.main-menu--open {
   display: table;
   width: 100%;
   padding: 0;
-  background: url(/images/support_bg_blur.jpg?685a990fbef8aa385359617c0e4955a3) no-repeat center center #e5e5e5;
   background-size: cover;
 }
 
@@ -8683,7 +8676,6 @@ body.main-menu--open {
 
 .section-main__intro-title {
   width: 70%;
-  color: #fff;
   font-size: 2.5rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -8694,47 +8686,14 @@ body.main-menu--open {
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* ==========================================================================
-   MAIN MENU >>
-============================================================================= */
+/* MAIN MENU >>
+========================================================================== */
 
-/* ==========================================================================
-   SECTIONS >> HEADER
-============================================================================= */
+/* SECTIONS >> HEADER
+========================================================================== */
 
-.section__overlay {
-  padding: 15rem 0;
-  background: -webkit-gradient(linear, right bottom, left top, from(#334263), to(rgba(10, 24, 88, 0.64)));
-  background: linear-gradient(to top left, #334263 0%, rgba(10, 24, 88, 0.64) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#801b71d6', endColorstr='#80c54daa', GradientType=0);
-}
-
-.section__intro {
-  display: table;
-  width: 100%;
-  padding: 0;
-  background: url(/images/support_bg_blur.jpg?685a990fbef8aa385359617c0e4955a3) no-repeat center center;
-  background-color: #e5e5e5;
-  background-size: cover;
-  -o-background-size: cover;
-}
-
-.section__intro-title {
-  width: 70%;
-  color: #fff;
-  font-size: 2.5rem;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.section__intro-description {
-  width: 60%;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-/* ==========================================================================
-   CALL WIDGET >>
-============================================================================= */
+/* CALL WIDGET >>
+========================================================================== */
 
 .call-widget {
   position: fixed;
@@ -8757,9 +8716,8 @@ body.main-menu--open {
   text-align: center;
 }
 
-/* ==========================================================================
-   MEDIA QUERIES >>
-============================================================================= */
+/* MEDIA QUERIES >>
+========================================================================== */
 
 @media (max-width: 768px) {
   .header {
@@ -8785,16 +8743,60 @@ body.main-menu--open {
     right: 0;
     bottom: 0;
     background: #fff;
-    height: 1000px;
     width: 50%;
     -webkit-transition: all .2s;
     transition: all .2s;
   }
 
-  .main-menu--open {
+  .main-menu__list {
+    margin: 3rem 0 0;
+    padding: 0;
+    list-style: none;
+    line-height: 1rem;
+  }
+
+  .main-menu__item a {
+    display: block;
+    padding: .5rem 1rem;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+  }
+
+  body.menu-open {
+    left: -50%;
+    overflow: hidden;
+  }
+
+  body.menu-open .main-menu {
     left: 50%;
     -webkit-box-shadow: inset 5px 0 10px 0 rgba(0, 0, 0, 0.05);
             box-shadow: inset 5px 0 10px 0 rgba(0, 0, 0, 0.05);
+  }
+
+  body.menu-open .button-menu .icon-bar {
+    background: #000;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+
+  body.menu-open .button-menu .icon-bar:nth-child(2) {
+    margin: 0 0 0 .5rem;
+    background: #f508ba;
+  }
+
+  body.menu-open .modal_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 120%;
+    background: #000;
+    opacity: .6;
+    z-index: 101;
+    -webkit-transition: all .3s;
+    transition: all .3s;
   }
 
   .section-main__intro-title {
