@@ -35,10 +35,6 @@ body {
   width: 100%;
   font-family: 'Montserrat', sans-serif;
   transition: left .2s;
-  &.main-menu--open {
-    left: -50%;
-    overflow: hidden;
-  }
 }
 
 /* HEADER >>
@@ -175,7 +171,7 @@ body {
     display: table;
     width: 100%;
     padding: 0;
-    //background: url('images/support_bg_blur.jpg') no-repeat center center #e5e5e5;
+    background: url('images/support_bg_blur.jpg') no-repeat center center #e5e5e5;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -190,7 +186,7 @@ body {
 
     &-title {
       width: 70%;
-      //color: #fff;
+      color: #fff;
       font-size: 2.5rem;
       font-weight: 700;
       text-transform: uppercase;
@@ -259,7 +255,7 @@ body {
     right: 0;
     bottom: 0;
     background: #fff;
-    width: 50%;
+    width: 70%;
     transition: all .2s;
     &__list {
       margin: 3rem 0 0;
@@ -279,10 +275,10 @@ body {
   }
   // OPEN MENU
   body.menu-open {
-    left: -50%;
+    left: -70%;
     overflow: hidden;
     & .main-menu {
-      left: 50%;
+      left: 30%;
       box-shadow: inset 5px 0 10px 0 rgba(0, 0, 0, 0.05);
     }
     & .button-menu {

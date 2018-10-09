@@ -8505,11 +8505,6 @@ body {
   transition: left .2s;
 }
 
-body.main-menu--open {
-  left: -50%;
-  overflow: hidden;
-}
-
 /* HEADER >>
 ========================================================================== */
 
@@ -8664,6 +8659,7 @@ body.main-menu--open {
   display: table;
   width: 100%;
   padding: 0;
+  background: url(/images/support_bg_blur.jpg?685a990fbef8aa385359617c0e4955a3) no-repeat center center #e5e5e5;
   background-size: cover;
 }
 
@@ -8676,6 +8672,7 @@ body.main-menu--open {
 
 .section-main__intro-title {
   width: 70%;
+  color: #fff;
   font-size: 2.5rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -8743,7 +8740,7 @@ body.main-menu--open {
     right: 0;
     bottom: 0;
     background: #fff;
-    width: 50%;
+    width: 70%;
     -webkit-transition: all .2s;
     transition: all .2s;
   }
@@ -8764,12 +8761,12 @@ body.main-menu--open {
   }
 
   body.menu-open {
-    left: -50%;
+    left: -70%;
     overflow: hidden;
   }
 
   body.menu-open .main-menu {
-    left: 50%;
+    left: 30%;
     -webkit-box-shadow: inset 5px 0 10px 0 rgba(0, 0, 0, 0.05);
             box-shadow: inset 5px 0 10px 0 rgba(0, 0, 0, 0.05);
   }
