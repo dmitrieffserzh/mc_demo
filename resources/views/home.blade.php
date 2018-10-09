@@ -10,7 +10,7 @@
 
     <section class="section">
         <div class="container">
-            <h2 class="section__title">То, сто мы делаем</h2>
+            <h2 class="section__title">То, что мы делаем</h2>
             <p class="section__subtitle">Основные услуги нашей компании</p>
         </div>
     </section>
