@@ -8581,7 +8581,7 @@ body {
 
 .header .button-menu--open .icon-bar:nth-child(2) {
   margin: 0 0 0 .5rem;
-  background: #f508ba;
+  background: #ff0063;
 }
 
 /* HEADER ON SCROLL >>
@@ -8759,7 +8759,7 @@ body {
   .main-menu__item a {
     display: block;
     padding: .5rem 1rem;
-    font-weight: 700;
+    font-weight: 600;
     color: #000;
     text-decoration: none;
   }
@@ -8783,7 +8783,7 @@ body {
 
   body.menu-open .button-menu .icon-bar:nth-child(2) {
     margin: 0 0 0 .5rem;
-    background: #f508ba;
+    background: #ff0063;
   }
 
   body.menu-open .modal_bg {
@@ -8812,6 +8812,16 @@ body {
   .section__title {
     width: 100%;
     font-size: 1.5rem;
+  }
+
+  .section__title:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 1.25rem;
+    height: .15rem;
+    background: #ff0063;
   }
 
   .section__subtitle {
